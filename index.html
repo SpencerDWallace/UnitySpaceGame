@@ -12,16 +12,14 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Unity Project.json", {onProgress: UnityProgress});
     </script>
 	<style>
-	.header {
-	padding: 5px;
-	text-align: center;
-	color: red;
-	font-size: 12px;
-	}
+	
 	</style>
   </head>
   <body>
-  <div class = "header"> <h2>R to restart scene, WASD to move, mouse to steer, spacebar to shoot. Planet and ship can be shot.</h2> </div> 
+  <div style = "position:fixed;  top: 10px; color: red;">
+         <h2>R to restart scene, WASD to move, mouse to steer, spacebar to shoot. Planet and ship can be shot.</h2> 
+      </div>
+  
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
